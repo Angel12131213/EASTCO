@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EASTCSO Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="admin-container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="admin-logo">
+
+            <img src="images/logo.webp" alt="Logo">
+
+            <h2>EASTCSO</h2>
+
+            <p>Admin Dashboard</p>
+
+        </div>
+
+        <ul>
+
+            <li>
+
+                <a href="#" id="dashboardBtn">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#" id="eventsBtn">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    Manage Events
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#" id="announcementBtn">
+
+                    <i class="fa-solid fa-bullhorn"></i>
+
+                    Manage Announcements
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="index.html">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    View Website
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="login.html" id="logoutBtn">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="admin-content">
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboardSection">
+
+            <h1>Welcome Administrator</h1>
+
+            <p>
+
+                Welcome to the EASTCSO Administration Panel.
+
+            </p>
+
+            <p>
+
+                Use the menu on the left to manage Events and Announcements.
+
+            </p>
+
+        </section>
+
+        <!-- EVENTS -->
+
+        <section id="eventsSection" style="display:none;">
+
+            <h2>Manage Events</h2>
+
+            <form id="eventForm">
+
+                <input
+                    type="text"
+                    id="eventTitle"
+                    placeholder="Event Title"
+                >
+
+                <input
+                    type="date"
+                    id="eventDate"
+                >
+
+                <textarea
+                    id="eventDescription"
+                    placeholder="Event Description"
+                ></textarea>
+
+                <button type="submit">
+
+                    Save Event
+
+                </button>
+
+            </form>
+
+            <hr><br>
+
+            <div id="eventList">
+
+            </div>
+
+        </section>
+
+        <!-- ANNOUNCEMENTS -->
+<section id="announcementSection" style="display:none;">
+
+    <h2>Manage Announcements</h2>
+
+    <form id="announcementForm">
+
+        <input
+            type="text"
+            id="announcementTitle"
+            placeholder="Announcement Title"
+        >
+
+        <input
+            type="date"
+            id="announcementDate"
+        >
+
+        <textarea
+            id="announcementDescription"
+            placeholder="Announcement"
+        ></textarea>
+
+        <button type="submit">
+
+            Save Announcement
+
+        </button>
+
+    </form>
+
+    <hr><br>
+
+    <div id="announcementList"></div>
+
+</section>
+
+    </main>
+
+</div>
+
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
